@@ -17,6 +17,9 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --
+import sqlite3
+conn= sqlite3.connect("data_task1.db")
+cur= conn.cursor()
 cur.execute(
 '''
 select sum(c12) from tbl1;
